@@ -1,4 +1,4 @@
-# Sourdough CSS reset
+# Sourdough CSS typography
 
 Typographic styles for Sourdough
 
