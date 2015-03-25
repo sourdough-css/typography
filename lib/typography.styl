@@ -1,0 +1,168 @@
+//
+// TYPOGRAPHIC STYLES
+// ==================
+// Base typography styles
+//
+// Layout styles for typographic elements should live in base.styl
+// Form and Table styles live in their respective stylesheets
+//
+// Based on stylus boilerplate by Jack Brewer
+// (https://github.com/jackbrewer/stylus-boilerplate)
+//
+
+//
+// BASE SETTINGS
+//
+
+:root
+  --base-font-family: Arial, Helvetica, sans-serif
+  --base-heading-font-family: Georgia, serif
+  --base-font-size: 16px
+  --base-line-height: 24px
+  --base-text-color: #333
+  --base-link-color: #3d77eb
+  --base-background-color: #fff
+  --base-selection-color: #fff
+  --base-selection-background-color: #3d77eb
+
+
+//
+// SELECTED TEXT
+//
+
+::-moz-selection
+  color: var(--base-selection-color)
+  background: var(--base-selection-background-color)
+  text-shadow: none
+::selection
+  color: var(--base-selection-color)
+  background: var(--base-selection-background-color)
+  text-shadow: none
+
+
+//
+// BASE STYLES
+//
+
+html
+  font-size: var(--base-font-size)
+  font-family: var(--base-font-family)
+  line-height: var(--base-line-height)
+  color: var(--base-text-color)
+  font-weight: normal
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+body
+  font-size: 1em
+
+
+//
+// HEADINGS
+// Uses a Double-stranded heading hierarchy to preserve the document outline.
+// http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+//
+
+@custom-selector --headings h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+
+--headings
+  font-family: var(--base-heading-font-family)
+  font-weight: bold
+  line-height: 1
+  color: var(--base-text-color)
+
+//
+// HEADING SIZES
+// Modular scale (perfect fourth ratio)
+// http://www.modularscale.com/?1&em&1.333&web&text
+//
+
+h1, .h1
+  font-size: 4.209em
+h2, .h2
+  font-size: 3.157em
+h3, .h3
+  font-size: 2.369em
+h4, .h4
+  font-size: 1.777em
+h5, .h5
+  font-size: 1.333em
+h6, .h6
+  font-size: 1em
+
+
+//
+// LINKS & BUTTONS
+//
+
+a
+  color: var(--base-link-color)
+  text-decoration: none
+
+  &:focus, &:hover
+    text-decoration: underline
+
+  &:active
+    color: var(--base-text-color)
+
+
+//
+// EMPHASIS
+//
+
+blockquote, q, em, dfn, i, cite, var
+  font-style: italic
+
+th, strong, dt, b
+  font-weight: bold
+
+
+//
+// QUOTES
+//
+
+blockquote p:before, blockquote p:after, q:before, q:after
+  content: ''
+
+blockquote
+  font-size: 1.125em
+
+  p
+    margin-bottom: 0
+
+
+//
+// TEXT MARKING
+//
+
+ins
+  text-decoration: none
+  border-bottom: 3px double
+
+del, s
+  text-decoration: line-through
+
+u
+  text-decoration: underline
+
+mark
+  background-color: #ff9
+  color: #000
+  margin-left: -2px
+  margin-right: -2px
+  padding-left: 2px
+  padding-right: 2px
+
+
+//
+// ADDITIONAL PRESONTATIONAL ELEMENTS
+//
+
+address
+  font-style: normal
+
+
+// In HTML5, the `<small>` element represents legal text or small-print, rather
+// than dictating a font size.
+small
+  font-size: inherit

@@ -1,0 +1,29 @@
+{
+  "name": "sourdough-typography",
+  "description": "Sourdough CSS typographic styles",
+  "version": "0.2.0",
+  "files": [
+    "index.styl",
+    "lib"
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "sourdough-preprocessor": "^0.4.0"
+  },
+  "scripts": {
+    "build": "sourdough index.styl build/typography.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sourdough-css/typography.git"
+  },
+  "keywords": [
+    "typography",
+    "browser",
+    "css",
+    "sourdough",
+    "style"
+  ]
+}
