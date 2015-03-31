@@ -1,7 +1,7 @@
 {
   "name": "sourdough-typography",
   "description": "Sourdough CSS typographic styles",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "files": [
     "index.styl",
     "lib"
