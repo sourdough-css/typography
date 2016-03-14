@@ -1,15 +1,13 @@
 {
   "name": "sourdough-typography",
   "description": "Sourdough CSS typographic styles",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "files": [
     "lib",
     "build"
   ],
   "style": "lib/typography.sss",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "sourdough-preprocessor": "^2.0.0"
   },
