@@ -3,11 +3,10 @@
   "description": "Sourdough CSS typographic styles",
   "version": "0.3.0",
   "files": [
-    "index.sss",
     "lib",
     "build"
   ],
-  "style": "index.sss",
+  "style": "lib/typography.sss",
   "dependencies": {
 
   },
@@ -15,7 +14,7 @@
     "sourdough-preprocessor": "^2.0.0"
   },
   "scripts": {
-    "build": "sourdough index.sss build/typography.css"
+    "build": "sourdough ./lib/typography.sss build/typography.css"
   },
   "repository": {
     "type": "git",

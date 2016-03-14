@@ -1,15 +1,15 @@
-//
-// TYPOGRAPHIC STYLES
-// ==================
-// Base typography styles
-//
-// Based on stylus boilerplate by Jack Brewer
-// (https://github.com/jackbrewer/stylus-boilerplate)
-//
+/*
+  TYPOGRAPHIC STYLES
+  ==================
+  Base typography styles
 
-//
-// BASE SETTINGS
-//
+  Based on stylus boilerplate by Jack Brewer
+  (https://github.com/jackbrewer/stylus-boilerplate)
+ */
+
+/*
+  BASE SETTINGS
+ */
 
 :root
   --base-font-family: Arial, Helvetica, sans-serif
@@ -22,9 +22,9 @@
   --base-selection-color: #fff
   --base-selection-background-color: #3d77eb
 
-//
-// COLOURS
-//
+/*
+  COLOURS
+ */
 
 :root
   --base-color-info: #3d77eb
@@ -33,9 +33,9 @@
   --base-color-alert: #eb3d41
 
 
-//
-// SELECTED TEXT
-//
+/*
+  SELECTED TEXT
+ */
 
 ::-moz-selection
   color: var(--base-selection-color)
@@ -47,9 +47,9 @@
   text-shadow: none
 
 
-//
-// BASE STYLES
-//
+/*
+  BASE STYLES
+ */
 
 html
   font-size: var(--base-font-size)
@@ -64,11 +64,11 @@ body
   font-size: 1em
 
 
-//
-// HEADINGS
-// Uses a Double-stranded heading hierarchy to preserve the document outline.
-// http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
-//
+/*
+  HEADINGS
+  Uses a Double-stranded heading hierarchy to preserve the document outline.
+  http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+ */
 
 @custom-selector :--headings h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 
@@ -78,11 +78,11 @@ body
   line-height: 1
   color: var(--base-text-color)
 
-//
-// HEADING SIZES
-// Modular scale (perfect fourth ratio)
-// http://www.modularscale.com/?1&em&1.333&web&text
-//
+/*
+  HEADING SIZES
+  Modular scale (perfect fourth ratio)
+  http://www.modularscale.com/?1&em&1.333&web&text
+ */
 
 h1, .h1
   font-size: 4.209em
@@ -98,9 +98,9 @@ h6, .h6
   font-size: 1em
 
 
-//
-// LINKS & BUTTONS
-//
+/*
+  LINKS & BUTTONS
+ */
 
 a
   color: var(--base-link-color)
@@ -113,9 +113,9 @@ a
     color: var(--base-text-color)
 
 
-//
-// EMPHASIS
-//
+/*
+  EMPHASIS
+ */
 
 blockquote, q, em, dfn, i, cite, var
   font-style: italic
@@ -124,9 +124,9 @@ th, strong, dt, b
   font-weight: bold
 
 
-//
-// QUOTES
-//
+/*
+  QUOTES
+ */
 
 blockquote p:before, blockquote p:after, q:before, q:after
   content: ''
@@ -138,9 +138,9 @@ blockquote
     margin-bottom: 0
 
 
-//
-// TEXT MARKING
-//
+/*
+  TEXT MARKING
+ */
 
 ins
   text-decoration: none
@@ -161,15 +161,16 @@ mark
   padding-right: 2px
 
 
-//
-// ADDITIONAL PRESONTATIONAL ELEMENTS
-//
+/*
+  ADDITIONAL PRESONTATIONAL ELEMENTS
+ */
 
 address
   font-style: normal
 
-
-// In HTML5, the `<small>` element represents legal text or small-print, rather
-// than dictating a font size.
+/*
+  In HTML5, the `<small>` element represents legal text or small-print, rather
+  than dictating a font size.
+  */
 small
   font-size: inherit
