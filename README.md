@@ -4,7 +4,7 @@ Typographic styles for Sourdough
 
 ## Installation
 
-Install [iojs](http://iojs.org) (comes with npm).
+Install [nodejs](http://nodejs.org) (comes with npm).
 
 ```
 npm install sourdough-typography
@@ -12,12 +12,12 @@ npm install sourdough-typography
 
 ## Build
 
+Install dependencies:
 ```
 npm install
 ```
 
-To generate a build:
-
+Run the build:
 ```
 npm run build
 ```
@@ -25,4 +25,4 @@ npm run build
 ## Browser support
 
 * Modern Browsers
-* Internet Explorer 8+
+* Internet Explorer 9+
